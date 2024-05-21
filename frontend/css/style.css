@@ -1,0 +1,896 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    height: 100%;
+}
+
+.logo {
+    height: 10vh;
+    filter: invert();
+}
+
+p {
+    text-align: center;
+    font-size: 24px;
+
+}
+
+dialog {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    color: #000000;
+}
+
+button {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border: 1px solid white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* login.html */
+.body1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../pic/backlogin.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.wrapper {
+    width: 420px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    position: relative;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: overline;
+}
+
+.wrapper .boutonco {
+    width: 100%;
+    height: 45px;
+    background: #000000;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.wrapper .boutonco a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper .signin {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.signin p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signin p a:hover {
+    text-decoration: underline;
+}
+
+/* home.html */
+
+.body2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: auto;
+    background: url('../pic/hub2.jpeg') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    z-index: 10;
+    position: fixed;
+    color: white;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin: 5px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.logout {
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
+.header a:hover {
+    color: blueviolet;
+}
+
+.empty {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.empty img {
+    height: auto;
+    width: auto;
+    max-width: 100vw;
+    max-height: 60vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+    width: 98%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 2vw;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+    width: 98%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 2vw;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.incontainer {
+    height: 100%;
+    width: 48%;
+    background: url('../pic/hubopen.jpeg');
+    /*changer la photo */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    opacity: 100%;
+}
+
+.incontainer2 {
+    height: 100%;
+    width: 48%;
+    background: url('../pic/hubcollec.webp');
+    /*changer la photo */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    opacity: 100%;
+}
+
+
+.incontainer4 {
+    height: 100%;
+    width: 48%;
+    background: url('../pic/hubprofil.jpeg');
+    /*changer la photo */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    opacity: 100%;
+}
+
+.btnhome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    border-radius: 100px;
+}
+
+.btnhome:hover {
+    background-color: white;
+    color: black;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 48%;
+}
+
+.resume p {
+    text-align: center;
+    color: #fff;
+}
+
+/*open.html*/
+
+.body3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../pic/hubopen.jpeg') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.booster {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.booster img {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.boosterbutton.actif {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    z-index: 5;
+    width: 100%;
+    height: 350px;
+    margin-top: 24vh;
+    background-color: rgb(3, 3, 73);
+}
+
+.boosterbutton.actif p {
+    visibility: visible;
+}
+
+.boosterbutton p {
+    visibility: hidden;
+}
+
+/*echange*/
+.body4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../pic/hubechange.jpeg') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.echange label {
+    font-size: 24px;
+}
+
+.echange select {
+    width: 10vw;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+
+}
+
+/*collection*/
+.body5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../pic/hubcollec.webp') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+/* profil*/
+.body6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../pic/hubprofil.jpeg') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.empty2 {
+    height: 12vh;
+    width: 100%;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 99%;
+    height: 50vh;
+    border-radius: 5px;
+    margin: 40px;
+    padding: 10px;
+    border: white 3px solid;
+}
+
+.profil.gryffondor {
+    background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 215, 0, 0.7));
+}
+
+.profil.serpentard {
+    background: linear-gradient(rgba(0, 134, 7, 0.7), rgba(88, 88, 88, 0.7));
+}
+
+.profil.poufsouffle {
+    background: linear-gradient(rgba(254, 232, 35, 0.7), rgba(128, 128, 128, 0.7));
+}
+
+.profil.serdaigle {
+    background: linear-gradient(rgba(42, 78, 255, 0.7), rgba(255, 215, 0, 0.7));
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.contenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.contenu div {
+    display: none;
+}
+
+.contenu .actif {
+    display: block;
+}
+
+li {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+p {
+    margin: 10px;
+}
+
+.maison {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+select {
+    color: #fff;
+    background: #000000;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.flip-card {
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 189px;
+    height: 264px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 4px solid rgb(54, 8, 153);
+    backface-visibility: hidden;
+    background-color: blueviolet;
+    color: white;
+}
+
+
+
+.flip-card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 5px;
+    border: 4px solid rgb(54, 8, 153);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back.gryf {
+    background-color: red;
+}
+
+.flip-card-back.gryf h3,
+.flip-card-back.gryf h4 {
+    color: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card-back.serp {
+    background-color: rgb(0, 134, 7);
+}
+
+.flip-card-back.serp h3,
+.flip-card-back.serp h4 {
+    color: rgb(88, 88, 88);
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card-back.pouf {
+    background-color: rgb(254, 232, 35);
+}
+
+.flip-card-back.pouf h3,
+.flip-card-back.pouf h4 {
+    color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card-back.serd {
+    background-color: rgb(42, 78, 255);
+}
+
+.flip-card-back.serd h3,
+.flip-card-back.serd h4 {
+    color: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card-back.other {
+    background-color: rgb(3, 3, 73);
+}
+
+.flip-card-back.other h3,
+.flip-card-back.other h4 {
+    color: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card-back.leg {
+    background: linear-gradient(rgb(3, 3, 73), gold);
+}
+
+.flip-card-back.leg h3,
+.flip-card-back.leg h4 {
+    color: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.menutxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin-top: 30vh;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    z-index: 11;
+    color: white;
+}
+
+.menu a {
+    color: #fff;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: blueviolet;
+
+}
+
+.menu.visible {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 12vh;
+    background: rgba(0, 0, 0, 0.658);
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 50px;
+    overflow: visible;
+    position: relative;
+    z-index: 12;
+}
+
+.burger span {
+    background: #fff;
+    height: 4px;
+    width: 20px;
+    margin-bottom: 2px;
+    opacity: 1;
+    position: absolute;
+}
+
+
+.headerphone {
+    display: none;
+    visibility: hidden;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    position: fixed;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        display: none;
+    }
+
+    .headerphone {
+        visibility: visible;
+        display: flex;
+    }
+
+    .profil {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .maison {
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    .infos {
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .booster {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .boosterbutton.actif {
+        width: 80vw;
+        height: 1000px;
+    }
+
+    .logout {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+
+.imgcard {
+    width: 189px;
+    height: 264px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #000000;
+    padding-top: 5vh;
+}
+
+.half1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.half2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+}
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Largeur de la fenêtre visible */
+    height: 100%;
+    /* Hauteur de la fenêtre visible */
+    overflow: auto;
+    /* Activer le défilement si nécessaire */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fond noir semi-transparent */
+}
+
+
+/* Style de la modal content */
+.modal-content {
+    background: linear-gradient(blue, rgb(1, 1, 79), black);
+    margin: 15% auto;
+    /* Centrer verticalement */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%;
+    /* Largeur de la modal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60vw;
+    height: 50vh;
+}
+
+.fermer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+/* Style du bouton pour fermer le modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style du bouton modal */
+.modal-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.fleche {
+    font-size: 40px;
+}
+
+button#drawButton {
+    width: 40vw;
+    height: 10vh;
+    font-size: 20px;
+    background: linear-gradient(blue, rgb(1, 1, 79), black);
+    border-color: gold;
+}

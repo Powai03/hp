@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontend/css/style.css">
+</head>
+
+<body>
+    <div class="body5">
+        <div class="header">
+            <a href="home.html">
+                <div class="logo"><img src="frontend/pic/logo.png" alt="logo hp"></div>
+            </a>
+            <a href="open.html">Ouvrir</a>
+            <a href="collection.html">Collection</a>
+            <a href="profil.html">Profil</a>
+            <a href="login.html" class="logout">Se déconnecter</a>
+        </div>
+        <div class="headerphone">
+            <a href="home.html">
+                <div class="logo"><img src="frontend/pic/logo.png" alt="logo hp"></div>
+            </a>
+            <div class="menu">
+                <a href="open.html">Ouvrir</a>
+                <a href="collection.html">Collection</a>
+                <a href="profil.html">Profil</a>
+                <a href="login.html" class="logout">Se déconnecter</a>
+            </div>
+            <div class="burger">
+                <div>Menu</div>
+            </div>
+        </div>
+        <div class="empty2">
+        </div>
+        <div class="filter">
+            <button id="gryffindorFilter">Gryffindor</button>
+            <button id="slytherinFilter">Slytherin</button>
+            <button id="hufflepuffFilter">Hufflepuff</button>
+            <button id="ravenclawFilter">Ravenclaw</button>
+            <button id="resetFilterButton">Réinitialiser le filtre</button>
+        </div>
+        <a href="collectionalt.html"><button>Voir Collection alternative</button></a>
+        <div class="card">
+        </div>
+    </div>
+    <button id="modalBtn" class="modal-btn" onclick="openModal()">
+        <div class="fleche">&#x21CC;</div>
+    </button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="fermer">
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <h1>Échanger des cartes</h1>
+            <label for="userCards">Sélectionnez une carte à envoyer :</label>
+            <select id="userCards"></select>
+            <label for="recipientUser">Choisissez un joueur :</label>
+            <select id="recipientUser"></select>
+            <button onclick="exchangeCards()">Envoyer la carte</button>
+        </div>
+    </div>
+</body>
+<script src="frontend/js/main copy.js"></script>
+<script src="frontend/js/menuburger.js"></script>
+<script src="frontend/js/modal.js"></script>
+<script src="frontend/js/exchange.js"></script>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontend/css/style.css">
+    <script>
+        var access_token = 'x access token';
+    </script>
+</head>
+
+<body>
+    <div class="body6">
+        <div class="header">
+            <a href="home.html">
+                <div class="logo"><img src="frontend/pic/logo.png" alt="logo hp"></div>
+            </a>
+            <a href="open.html">Ouvrir</a>
+            <a href="collection.html">Collection</a>
+            <a href="profil.html">Profil</a>
+            <a href="login.html" class="logout">Se déconnecter</a>
+        </div>
+        <div class="headerphone">
+            <a href="home.html">
+                <div class="logo"><img src="frontend/pic/logo.png" alt="logo hp"></div>
+            </a>
+            <div class="menu">
+                <a href="open.html">Ouvrir</a>
+                <a href="collection.html">Collection</a>
+                <a href="profil.html">Profil</a>
+                <a href="login.html" class="logout">Se déconnecter</a>
+            </div>
+            <div class="burger">
+                <div>Menu</div>
+            </div>
+        </div>
+        <div class="empty2"></div>
+        <div class="profil">
+            <div class="infos" id="infos"></div>
+            <div class="info">
+                <p>Carte préférée :</p>
+                <select id="cartepref">
+                    <option value="">Sélectionnez votre carte préférée</option>
+                </select>
+                <button id="favoriteButton" onclick="updateFavoriteCard()">Mettre à jour la carte favorite</button>
+            </div>
+        </div>
+        <h1>Ma collection:</h1>
+        <div class="card">
+        </div>
+        <footer>
+            <div class="half1">
+                <p>© 2020 Harry Potter by Kilou. Tous droits réservés.</p>
+                <p>Contact : </p><br><a
+                    href="https://www.linkedin.com/in/kilian-delcenserie-076a2028b/">Linkedin</a><br><a
+                    href="https://www.instagram.com/kilian.dlcsr/">Instagram</a></p>
+            </div>
+            <div class="half2">
+                <a href="home.html">Accueil</a>
+                <a href="open.html">Ouvrir</a>
+                <a href="collection.html">Collection</a>
+                <a href="profil.html">Profil</a>
+                <a href="login.html">Se déconnecter</a>
+        </footer>
+    </div>
+    <button id="modalBtn" class="modal-btn" onclick="openModal()">
+        <div class="fleche">&#x21CC;</div>
+    </button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="fermer">
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <h1>Échanger des cartes</h1>
+            <label for="userCards">Sélectionnez une carte à envoyer :</label>
+            <select id="userCards"></select>
+            <label for="recipientUser">Choisissez un joueur :</label>
+            <select id="recipientUser"></select>
+            <button onclick="exchangeCards()">Envoyer la carte</button>
+        </div>
+    </div>
+</body>
+<script src="frontend/js/menuburger.js"></script>
+<script src="frontend/js/getuser.js"></script>
+<script src="frontend/js/inventory.js"></script>
+<script src="frontend/js/modal.js"></script>
+<script src="frontend/js/exchange.js"></script>
+</html>

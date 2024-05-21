@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontend/css/style.css">
+</head>
+
+<body>
+    <div class="body1">
+        <div class="logo">
+            <img src="frontend/pic/logo.png" alt="logo harry potter" height="100px">
+        </div>
+        <div class="wrapper">
+            <form>
+                <h1>S'inscrire</h1>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Pseudo" name="pseudo" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Mot de passe" name="password" required>
+                </div>
+                <label for="maison">Maison</label>
+                <select name="maison" id="maison">
+                    <option value="gryffondor">Gryffondor</option>
+                    <option value="serdaigle">Serdaigle</option>
+                    <option value="poufsouffle">Poufsouffle</option>
+                    <option value="serpentard">Serpentard</option>
+                </select>
+                <button type="button" onclick="signUp()"> S'inscrire</button>
+            </form>
+        </div>
+        <div class="empty" height="100px"></div>
+    </div>
+</body>
+<script src="frontend/js/signup.js"></script>
+</html>
